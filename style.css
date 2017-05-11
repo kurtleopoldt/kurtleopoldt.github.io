@@ -16,18 +16,20 @@ main {
 	line-height: 1.5;
 	margin: 0 auto;
 	max-width: 50em;
-	padding: 4em 1em;
+	padding: 3em 1em;
 }
 
 h1:first-of-type {
 	padding-top: 3rem;
+	font-size: 4rem;
+	font-weight: 500;
 }
 
 h1, h2, h3, strong {
 	color: #333;
 }
 
-h2, h3 {
+h2 {
 	margin-top: 1em;
 	padding-top: 1em;
 }
@@ -40,8 +42,8 @@ html{
 header {
   background-color: #263d36;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.3), 
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.65)
       ), 
       url("https://source.unsplash.com//i_ivTcj8GFo");
   background-position: center;
@@ -51,16 +53,21 @@ header {
   max-width: none;
   /*padding: 10vw 2em;*/
   text-align: center;
-
+  top: 50%;
   /*display: flex;*/
   height: 100vh;
+
+
 }
 
 a {
-  border: 1px solid #e81c4f;
-  border-radius: 290486px;
+  border: 1px solid #0284B3;
+  /*border: 1px solid #3D5D42;*/
+
+  /*border-radius: 290486px;*/
   color: white;
-  font-size: 0.6em;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
   letter-spacing: 0.2em;
   padding: 1em 2em;
   text-transform: uppercase;
@@ -75,14 +82,15 @@ header li {
 }
 
 header a:hover {
-  background:  #e81c4f;
+  /*background:  #3D5D42;*/
+  background:  #0284B3;
   color: white;
 }
 
 header h1 {
   color: white;
-  font-size: 2.5em;
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 header h3 {
@@ -100,25 +108,67 @@ header img {
   width: 120px;
 }
 
+.header-text {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 footer {
 	text-align: center;
 }
 
 footer a{
 	text-decoration: none;
+  border: 1px solid #000;
+  /*border: 1px solid #3D5D42;*/
+
+  /*border-radius: 290486px;*/
+  color: white;
+  background-color: #0284B3;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+footer a:hover {
+  /*background:  #3D5D42;*/
+  background:  rgba(0, 0, 0, 0.2);
+  border: 1px solid #0284B3;
+  color: #0284B3;
 }
 
 footer li {
 	list-style: none;
 	display: inline;
+	padding: 1em;
 }
 
 .lead {
-	max-width: 450px;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.tagline {
+	font-size: 2.3rem;
+	/*padding-top: 7rem;*/
+	/*max-width: 550px;*/
+	font-style: italic;
+	margin-top: 1em;
+	padding-top: 1em;
 }
 
 ul:first-of-type {
-	padding: 3em;
+	padding: 3rem;
+	padding-bottom: 5rem;
+	/*padding-bottom: 5rem;*/
 	margin: 0;
 }
 
