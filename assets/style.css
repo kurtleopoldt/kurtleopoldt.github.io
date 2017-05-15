@@ -6,6 +6,7 @@ a {
 
 body {
 	font-family: "Raleway", "Helvetica", "Arial", sans-serif;
+	font-size: 1.3rem;
 	margin: 0;
 	padding: 0;
 	background-color: #FEFEFE;
@@ -33,10 +34,21 @@ h1, h2, h3, strong {
 	color: #333;
 }
 
-/*h2 {
-	margin-top: 1em;
-	padding-top: 1em;
-}*/
+h2 {
+	font-size: 2rem;
+	padding-bottom: 0.75rem;
+	padding-top: 3rem;
+	border-bottom: 2px solid #0284B3;
+	border-image: linear-gradient(to left, transparent, #0284B3) 10;
+}
+
+h3 {
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	padding-top: 1.25rem;
+  padding-bottom: 0.5rem;
+	text-transform: uppercase;
+}
 
 html{
 	height: 100%;
@@ -163,11 +175,28 @@ footer li {
 	padding: 1rem;
 }
 
+img {
+  border: 1px solid #0284B3;
+}
+
 .lead {
+  background-color: #eee;
+  color: #3D5D42;
+  /*color: #555;*/
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.lead h3{
 	font-size: 1.5rem;
 	font-weight: 700;
 	font-style: italic;
-	margin-bottom: 4rem;
+	letter-spacing: 0;
+  margin: 0 auto;
+	padding: 0;
+  max-width: 50rem;
+	text-transform: none;
 }
 
 .tagline {
@@ -180,7 +209,7 @@ footer li {
 	text-shadow: 3px 3px 7px rgba(0, 0, 0, .6);
 }
 
-ul {
+nav ul {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	padding-left: 0;
