@@ -1,10 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,700';
 
 :root {
-  --heading-color: white
+  --heading-color: #fbfcfe
 
 /*gold options?
-#ffd700
 #ffd700
 #fff09d
 #ffdd27
@@ -20,7 +19,7 @@
 #fffceb*/
 ;
   --link-main-color: #296eaa;
-  --main-background-color: #fefefe;
+  --main-background-color: #fbfcfe /*#fefefe*/;
 }
 
 a {
@@ -46,11 +45,18 @@ main {
 h1:first-of-type {
   color: var(--heading-color);
 	padding-top: 3rem;
+  padding-bottom: 1rem;
 	font-size: 4.25rem;
 	font-weight: 700;
 	letter-spacing: .4rem;
 	text-transform: uppercase;
+  font-family: Raleway;
 	text-shadow: 3px 3px 7px rgba(0, 0, 0, .6);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+h1 {
+  /*padding-top: 1rem;*/
 }
 
 h1, h2, h3, strong {
@@ -84,7 +90,8 @@ header {
       rgba(0, 0, 0, 0.2), 
       rgba(0, 0, 0, 0.65)
       ), 
-      url("https://source.unsplash.com//i_ivTcj8GFo");
+      url(background-small.jpg)
+      /*url("https://source.unsplash.com//i_ivTcj8GFo")*/;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -186,8 +193,8 @@ footer li {
 	padding: 1rem;
 }
 
-img {
-  border: 1px solid var(--link-main-color);
+.obf{
+  unicode-bidi:bidi-override; direction: rtl;
 }
 
 .lead {
@@ -197,6 +204,14 @@ img {
   line-height: 1.5;
   margin: 0 auto;
   padding: 3rem 0;
+
+  background: 
+    linear-gradient(63deg, #ebf3fa 23%, transparent 23%) 7px 0, 
+    linear-gradient(63deg, transparent 74%, #ebf3fa 78%), 
+    linear-gradient(63deg, transparent 34%, #ebf3fa 38%, #ebf3fa 58%, transparent 62%), 
+    #fbfcfe;
+    background-size: 16px 48px;
+    /*#D9EEFF*/
 }
 
 .lead h3{
