@@ -1,29 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,700';
 
 :root {
-  --heading-color: #fbfcfe
-
-/*gold options?
-#ffd700
-#fff09d
-#ffdd27
-#ffe03b
-#ffe34e
-#ffe662
-#ffe976
-#ffed89
-#fff09d
-#fff3b1
-#fff6c4
-#fff9d8
-#fffceb*/
-;
+  --heading-color: #fbfcfe;
   --link-main-color: #296eaa;
-  --main-background-color: #fbfcfe /*#fefefe*/;
-}
-
-a {
-	color: #006F2A;
+  --main-background-color: #fbfcfe;
 }
 
 body {
@@ -35,18 +15,18 @@ body {
 }
 
 main {
-	color: #3D5D42;
 	line-height: 1.5;
 	margin: 0 auto;
 	max-width: 50rem;
 	padding: 1rem;
+  text-align: justify;
 }
 
 h1:first-of-type {
   color: var(--heading-color);
 	padding-top: 3rem;
   padding-bottom: 1rem;
-	font-size: 4.25rem;
+	font-size: 4rem;
 	font-weight: 700;
 	letter-spacing: .4rem;
 	text-transform: uppercase;
@@ -66,7 +46,7 @@ h1, h2, h3, strong {
 h2 {
 	font-size: 2rem;
 	padding-bottom: 0.75rem;
-	padding-top: 3rem;
+	padding-top: 2rem;
 	border-bottom: 2px solid var(--link-main-color);
 	border-image: linear-gradient(to left, transparent, var(--link-main-color)) 10;
 }
@@ -204,6 +184,7 @@ footer li {
   line-height: 1.5;
   margin: 0 auto;
   padding: 3rem 0;
+  text-align: justify;
 
   background: 
     linear-gradient(63deg, #ebf3fa 23%, transparent 23%) 7px 0, 
@@ -241,4 +222,12 @@ nav ul {
 	padding-left: 0;
 	padding-right: 0;
 	margin: 0;
+}
+
+li span {
+  text-decoration: underline;
+}
+
+.obf {
+  text-decoration: none;
 }
