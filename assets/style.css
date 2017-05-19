@@ -1,12 +1,19 @@
-:root {
+/*:root {
   --heading-color: #fbfcfe;
   --link-main-color: #296eaa;
   --main-background-color: #fbfcfe;
 }
+removed for IE compatibility
+*/
+
+a {
+  color: #296eaa;
+  text-decoration: none;
+}
 
 body {
   color: #333;
-  background-color: var(--main-background-color);
+  background-color: #fbfcfe;
 	font-family: "Raleway", "Helvetica", "Arial", sans-serif;
 	font-size: 1.3rem;
 	margin: 0;
@@ -24,7 +31,7 @@ main {
 
 h1:first-of-type {
   border-bottom: 2px solid rgba(255, 255, 255, 0.75);
-  color: var(--heading-color);
+  color: #fbfcfe;
   font-family: Raleway;
   font-size: 4rem;
   font-weight: 700;
@@ -36,8 +43,8 @@ h1:first-of-type {
 }
 
 h2 {
-  border-bottom: 2px solid var(--link-main-color);
-  border-image: linear-gradient(to left, transparent, var(--link-main-color)) 10;
+  border-bottom: 2px solid #296eaa;
+  border-image: linear-gradient(to left, transparent, #296eaa) 10;
 	font-size: 2rem;
 	padding-bottom: 0.25rem;
 	padding-top: 2rem;
@@ -66,40 +73,33 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
   /*max-width: none;*/
   text-align: center;
   top: 50%;
-  height: 100vh;
+  
 
 }
 
 header a {
-  border: 1px solid var(--link-main-color);
-  color: white;
   background-color: rgba(0, 0, 0, 0.25);
-  font-size: 0.8rem;
-  letter-spacing: 0.17rem;
-  padding: .8rem .8rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: none 200ms ease-out;
-  transition-property: color, background;
-  display: inline-block;
-  width: 120px;
+  border: 1px solid #296eaa;
+  color: #fbfcfe;
 }
 
 header a:hover {
-  background:  var(--link-main-color);
-  color: white;
+  background:  #296eaa;
+  color: #fbfcfe;
 }
 
-header li {
+header li, footer li {
 	display: inline-block;
+  list-style: none;
 	padding: 1em;
 }
 
 header h1 {
-  color: white;
+  color: #fbfcfe;
   font-family: "Raleway";
   font-size: 3rem;
   font-weight: 400;
@@ -107,55 +107,42 @@ header h1 {
 }
 
 header h3 {
-	color: white;
-	font-size: 1.5em;
 	font-weight: 300;
+  margin: 0 auto;
 	max-width: 50em;
-	margin: 0 auto;
-}
-
-header img {
-  display: inline-block;
-  height: 120px;
-  vertical-align: top;
-  width: 120px;
 }
 
 footer {
+  background-color: #296eaa;
 	text-align: center;
-	background-color: var(--link-main-color);
 }
 
 footer a{
-	text-decoration: none;
+  background-color: #fbfcfe;
   border: 1px solid #333;
   color: #333;
-  background-color: var(--main-background-color);
-  font-size: 0.8rem;
-  letter-spacing: 0.17rem;
-  padding: .8rem .8rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: none 200ms ease-out;
-  transition-property: color, background;
-  display: inline-block;
-  width: 120px;
 }
 
 footer a:hover {
-  background:  var(--main-background-color);
-  border: 1px solid var(--link-main-color);
-  color: var(--link-main-color);
-}
-
-footer li {
-	list-style: none;
-	display: inline-block;
-	padding: 1rem;
+  background:  rgba(255, 255, 255, .75);
+  border: 1px solid #296eaa;
+  color: #296eaa;
 }
 
 li span {
   text-decoration: underline;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.17rem;
+  padding: .8rem .8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  width: 120px;
 }
 
 nav ul {
@@ -179,45 +166,40 @@ ul + h3 {
 }
 
 .lead {
-  /*background-color: #eee;*/
   background-color: #ebf3fa;
-  color: #3D5D42;
-  line-height: 1.5;
-  margin: 0 auto;
-  padding: 3rem 0;
-  text-align: justify;
-
   background: 
     linear-gradient(63deg, #ebf3fa 23%, transparent 23%) 7px 0, 
     linear-gradient(63deg, transparent 74%, #ebf3fa 78%), 
     linear-gradient(63deg, transparent 34%, #ebf3fa 38%, #ebf3fa 58%, transparent 62%), 
     #fbfcfe;
-    background-size: 16px 48px;
-    /*#D9EEFF*/
+  background-size: 16px 48px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 3rem 0;
+  text-align: justify;
 }
 
 .lead h3{
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	font-weight: 700;
-	font-style: italic;
-	letter-spacing: 0;
+	letter-spacing: 0.01;
   margin: 0 auto;
 	padding: 0;
   max-width: 50rem;
 	text-transform: none;
 }
 
-.obf {
-  text-decoration: none;
-  unicode-bidi:bidi-override; direction: rtl;
-}
-
 .tagline {
-  color: var(--heading-color);
+  color: #fbfcfe;
 	font-size: 2.3rem;
 	font-style: italic;
 	margin-top: 1rem;
 	padding-top: 5rem;
 	text-shadow: 3px 3px 7px rgba(0, 0, 0, .6);
   text-transform: none;
+}
+
+#obf {
+  text-decoration: none;
 }
