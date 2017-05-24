@@ -203,3 +203,8 @@ ul + h3 {
 #obf {
   text-decoration: none;
 }
+
+#contact ~ ul {
+  list-style-type: none;
+  padding: 0;
+}
